@@ -7,3 +7,5 @@ User: leod8792@gmail.com | Pass: LEONARDO@4211 | IP: 2804:2a5c:a100:5600:5d7d:13
 User: Leonardo  | Pass: bj!d8qH-XN_0PZP | IP: 2804:2a5c:a100:5600:5d7d:135d:4b0f:f624
 User: leod8792@gmail.com | Pass: dWN7_FL78lhi9@x | IP: 2804:2a5c:a100:5600:5d7d:135d:4b0f:f624
 
+User: admin | Pass: ola mundo | IP: 127.0.0.1
+User: i.pabloasilva | Pass: ASSSS | IP: 127.0.0.1
